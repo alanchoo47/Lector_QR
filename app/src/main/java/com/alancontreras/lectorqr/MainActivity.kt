@@ -1,5 +1,6 @@
 package com.alancontreras.lectorqr
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,5 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun click(view: View) {}
+    fun click(view: View) {
+        startActivity(Intent( this, QR::class.java))
+
+    }
+
 }
+
